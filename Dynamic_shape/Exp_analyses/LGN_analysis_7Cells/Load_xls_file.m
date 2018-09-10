@@ -1,0 +1,36 @@
+[num,txt,raw_cell] = xlsread('analysis_august18.xlsx'); 
+%%%%%  create a table analysis. 
+analysis = table; 
+
+analysis.VarName1 = cell2mat(raw_cell(2:end,1));
+analysis.file = categorical(raw_cell(2:end,2));
+analysis.cell_id = cell2mat(raw_cell(2:end,3));
+analysis.condition = categorical(raw_cell(2:end,4));
+analysis.area = cell2mat(raw_cell(2:end,5));
+analysis.lgn_mean = cell2mat(raw_cell(2:end,6));
+analysis.length = cell2mat(raw_cell(2:end,7));
+analysis.major = cell2mat(raw_cell(2:end,8));
+analysis.minor = cell2mat(raw_cell(2:end,9));
+analysis.angle = cell2mat(raw_cell(2:end,10));
+analysis.z = cell2mat(raw_cell(2:end,11));
+analysis.frame = cell2mat(raw_cell(2:end,12));
+analysis.s =cell2mat(raw_cell(2:end,13));
+analysis.lgn_intensity = cell2mat(raw_cell(2:end,14));
+analysis.lgn_background = cell2mat(raw_cell(2:end,15));
+analysis.cell_ar = cell2mat(raw_cell(2:end,16));
+analysis.initial_cell_angle = cell2mat(raw_cell(2:end,17));
+analysis.time = cell2mat(raw_cell(2:end,18));
+analysis.degrees = cell2mat(raw_cell(2:end,19));
+analysis.s_norm = cell2mat(raw_cell(2:end,20));
+analysis.lgn_norm = cell2mat(raw_cell(2:end,21));
+analysis.x_a = cell2mat(raw_cell(2:end,22));
+analysis.y_a = cell2mat(raw_cell(2:end,23));
+analysis.z_a = cell2mat(raw_cell(2:end,24));
+analysis.x_b = cell2mat(raw_cell(2:end,25));
+analysis.y_b = cell2mat(raw_cell(2:end,26));
+analysis.z_b = cell2mat(raw_cell(2:end,27));
+analysis.z_res = cell2mat(raw_cell(2:end,28));
+analysis.spindle_length = cell2mat(raw_cell(2:end,29));
+analysis.theta_raw = cell2mat(raw_cell(2:end,30));
+analysis.phi = cell2mat(raw_cell(2:end,31));
+analysis.theta = cell2mat(raw_cell(2:end,32));
